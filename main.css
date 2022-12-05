@@ -1,0 +1,195 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	overflow-x: hidden;
+	margin-top: 0%;
+	padding-top: 0%;
+	background-color: rgb(249, 243, 169);
+}
+.nav-flex-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: fixed;
+	z-index: 100;
+	left: 0;
+	width: 100%;
+	background-color: rgb(249, 243, 169);
+	margin-top: 0;   
+}
+.nav-flex-row li {
+	text-decoration: none;
+	list-style-type: none;
+	padding: 20px 15px;
+}
+.nav-flex-row li a {
+	color: rgb(12, 9, 9);
+	font-size: 20px;
+	font-weight: 300;
+}
+.nav-flex-row li a:hover{
+	background: #E7E7E7;
+}
+.section-intro {
+	height: 820px;
+    background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.footer{
+	background-color: black;
+	height: 325px;
+}
+.about-section {
+	display: flex;
+	align-items: center;
+	padding: 50px 30px;
+}
+a.link-to-book:hover {
+	background-color: #ffffff;
+	color: #95999e;
+	text-decoration: none;
+}
+.about-section h3{
+	text-align: center;
+	width: 60%;
+	margin: auto;
+	font-size: 1.8em;
+}
+.about-section p{
+	text-align: center;
+	width: 60%;
+	margin: auto;
+	font-size: 1.8em;
+	font-style: italic;
+}
+.row-flex {
+	display: flex;
+	flex-direction: row;
+}	
+.opening-time,
+.contact-address {
+	flex: 1;
+	margin: 30px 20px;
+	font-size: 1.2em;
+	color: white;
+}
+.opening-time p span,
+.contact-address p span {
+	display: block;
+}
+.dishday{
+	display: grid;
+	align-items: center; 
+	grid-template-columns: 3fr 4fr 1fr;
+}
+img {
+	 max-width: 250%;
+	 max-height:250%;
+}
+.description{
+	text-align: right;
+	 font-size: 20px;
+}
+h2{
+	text-align: center;
+	font-size: 30px;
+	font-style: oblique;
+}
+ul{
+	list-style: none;
+}
+.menu{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+}
+#descp{
+	font-style: italic;
+	font-size: large;
+	font-weight: lighter;
+}
+.healthytips{
+	text-align: center;
+	font-weight: bold;
+	font-size: large;
+}
+#healthytips{
+	font-weight: lighter;
+}
+#images{
+	display: block;
+	margin-left: 25%;
+}
+.feedback {
+	background-color : #31B0D5;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 4px;
+	border-color: #46b8da;
+} 
+#mybutton {
+	position: fixed;
+	bottom: 11px;
+	right: 9px;
+}
+iframe{
+	margin-top: 20px;
+}
+#hover{
+	border: 2px solid black;
+}
+#hover:hover{
+	transform: scale(1.05);
+	transition: 0.5;
+}
+@media (min-width:577px) and (max-width: 800px) {
+.section-intro {
+	height: 500px;
+}
+.about-section p,
+.about-section h3 {
+	font-size: 20px;
+}
+.row-flex {
+	display: flex;
+	flex-direction: column;
+}
+}
+@media screen and (max-width: 576px) {
+.section-intro {
+	height: 300px;
+}
+.about-section {
+	padding: 30px;
+}
+.section-intro h1 {
+	font-size: 2em;
+}
+.about-section p,
+.about-section h3 {
+	font-size: 15px;
+}
+.row-flex {
+	display: flex;
+	flex-direction: column;
+}
+.row-flex h3 {
+	font-size: 25px;
+	text-align: center;
+}
+.opening-time p span,
+.contact-address p span {
+	font-size: 15px;
+	text-align: center;
+}
+}
